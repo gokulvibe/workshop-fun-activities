@@ -7,10 +7,15 @@ const NameBox = () => {
   return (
     <div className="box">
       <span className="text-color">
-      	{/*
-      	themeMode === THEME_TYPE.DARK ? "DARK" : "LIGHT"
-      	*/ }
-        Doge is too sensitive to light!
+        {
+            themeMode.theme === THEME_TYPE.LIGHT ? (
+              "Doge is too sensitive to light! He doesn't like it"
+            ) : themeMode.theme === THEME_TYPE.GREEN ? (
+                "Oopsie...where is my dark mode!??"
+            ) : themeMode.theme === THEME_TYPE.DARK ? (
+                "Such wow, thankyou"
+            ) : <img src={happyDoge}></img>
+        }
       </span>
     </div>
   );

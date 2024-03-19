@@ -7,19 +7,21 @@ import happyDoge from "../images/happy doge.jpg"
 import disappointedDoge from "../images/Dissapointed doge.jpg"
 import dogeApproves from "../images/Doge approves.jpg"
 
+import '../css/doge.css'
+
 
 const Doge = () => {
     const [themeMode, setTheme] = useContext(ThemeContext);
-
+    console.log("current theme mode: ",themeMode)
 
     return (
         <div className="doge-image">
             {
-                themeMode === THEME_TYPE.LIGHT ? (
+                themeMode.theme === THEME_TYPE.LIGHT ? (
                     <img src={angryDoge}></img>
-                ) : themeMode === THEME_TYPE.GREEN ? (
+                ) : themeMode.theme === THEME_TYPE.GREEN ? (
                     <img src={disappointedDoge}></img>
-                ) : themeMode === THEME_TYPE.DARK ? (
+                ) : themeMode.theme === THEME_TYPE.DARK ? (
                     <img src={dogeApproves}></img>
                 ) : <img src={happyDoge}></img>
             }

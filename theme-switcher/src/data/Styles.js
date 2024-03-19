@@ -14,7 +14,7 @@ const Theme = {
   [THEME_TYPE.GREEN]: {
     background: "#74ee15",
     text: "#fff",
-    divider: "rgba(255, 255, 255, 0.12)",
+    divider: "rgba(255, 255, 255, 0.9)",
   },
 };
 
