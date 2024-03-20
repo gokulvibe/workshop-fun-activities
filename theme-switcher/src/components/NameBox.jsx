@@ -14,7 +14,7 @@ const NameBox = () => {
                 "Oopsie...where is my dark mode!??"
             ) : themeMode.theme === THEME_TYPE.DARK ? (
                 "Such wow, thankyou"
-            ) : <img src={happyDoge}></img>
+            ): ""
         }
       </span>
     </div>
