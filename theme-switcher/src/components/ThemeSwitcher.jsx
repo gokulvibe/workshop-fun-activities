@@ -25,7 +25,6 @@ const ThemeSwitcher = () => {
           data-testid="theme-changer"
           type="checkbox"
           defaultChecked={themeMode.theme === THEME_TYPE.DARK}
-          onChange={handleThemeChange}
         />
         <span className="slider round"></span>
       </label>
