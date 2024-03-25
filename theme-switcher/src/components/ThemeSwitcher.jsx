@@ -10,7 +10,7 @@ const ThemeSwitcher = () => {
   const handleThemeChange = (e) => {
     console.log("current Value: "+ themeMode.theme);
     if(themeMode.theme === THEME_TYPE.LIGHT) {
-      setTheme({ theme:THEME_TYPE.GREEN });
+      setTheme({ theme:THEME_TYPE.DARK });
     }
     else {
       setTheme({ theme:THEME_TYPE.LIGHT });
@@ -25,6 +25,7 @@ const ThemeSwitcher = () => {
           data-testid="theme-changer"
           type="checkbox"
           defaultChecked={themeMode.theme === THEME_TYPE.DARK}
+          onChange={handleThemeChange}
         />
         <span className="slider round"></span>
       </label>
